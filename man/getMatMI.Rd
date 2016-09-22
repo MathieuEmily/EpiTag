@@ -25,8 +25,8 @@ getMatMI(Region1,Region2=NULL,allelic=FALSE)
 ############
 ## Example with simulated allelic data
 ############
-data(Region1)
-data(Region2)
+data(RegionA)
+data(RegionB)
 MatMI <- getMatMI(Region1=RegionA,Region2=RegionB,allelic=TRUE)
 
 ############

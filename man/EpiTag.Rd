@@ -29,8 +29,8 @@ A list containing the following components:
 ############
 ## Example with simulated allelic data
 ############
-data(Region1)
-data(Region2)
+data(RegionA)
+data(RegionB)
 
 ## Computation of the mutual information and of the tag SNP selection simultaneously
 res.EpiTag1 <- EpiTag(Region1=RegionA,Region2=RegionA,threshold=0.81,allelic=TRUE)
