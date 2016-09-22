@@ -1,0 +1,10 @@
+Package: EpiTag
+Type: Package
+Title: TagSNP selection for epistasis
+Version: 0.99.0
+Author: Mathieu Emily, Chloé Friguet
+Maintainer: Mathieu Emily <mathieu.emily@agrocampus-ouest.fr>
+Description: The aim of this package is to propose a method for selecting TagSNPs to optimize power for detecting epistasis.
+License: GPL (>= 2)
+LazyData: TRUE
+Depends: R (>= 3.3)
