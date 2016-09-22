@@ -2,7 +2,7 @@
 \alias{EpiTag}
 \title{Selection of TagSNPs }
 \usage{
-EpiTag(Region1=NULL,Region2=NULL,mat.MI=NULL,threshold=0.8,allelic=FALSE){
+EpiTag(Region1=NULL,Region2=NULL,mat.MI=NULL,threshold=0.8,allelic=FALSE)
 }
 \arguments{
 \item{Region1}{A nxp1 \code{\link{matrix}} or \code{\link{data.frame}} containing allele or genotype of the p1 SNPs for the n individuals.}
