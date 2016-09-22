@@ -33,7 +33,7 @@ data(RegionA)
 data(RegionB)
 
 ## Computation of the mutual information and of the tag SNP selection simultaneously
-res.EpiTag1 <- EpiTag(Region1=RegionA,Region2=RegionA,threshold=0.81,allelic=TRUE)
+res.EpiTag1 <- EpiTag(Region1=RegionA,Region2=RegionB,threshold=0.81,allelic=TRUE)
 
 ## Same results with a two steps computation of the mutual information and of the tag SNP selection
 MatMI <- getMatMI(Region1=RegionA,Region2=RegionB,allelic=TRUE)
