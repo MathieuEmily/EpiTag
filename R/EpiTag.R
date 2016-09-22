@@ -126,7 +126,7 @@ EpiTag.2Regions <- function(mat.MI,threshold=0.8){
   }
   tags.R1 <- unique(unlist(tag.list.R1))
   tags.R2 <- unique(unlist(tag.list.R2))
-  return(list(tagSNPs.R1=dimnames(mat.MI)[[1]][tags.R1],tagSNPs.R2=dimnames(tmpMatMI$mat.MI)[[1]][tags.R2],pairs.tag=tag.list,pairs.bins=bin.list))
+  return(list(tagSNPs.R1=dimnames(mat.MI)[[1]][tags.R1],tagSNPs.R2=dimnames(mat.MI)[[2]][tags.R2],pairs.tag=tag.list,pairs.bins=bin.list))
 }
 
 
