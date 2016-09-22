@@ -47,7 +47,7 @@ tmpRA <- RegionA
 tmpRB <- RegionB[,1:4]
 tmpMatMI <- getMatMI(Region1=tmpRA,Region2=tmpRB,allelic=TRUE)
 # MatMI <- getMatMI.2Regions(data1=data$geno.R1,data2=data$geno.R2,allelic=TRUE)
-# my.EpiTag <- EpiTag.2Regions(mat.MI=MatMI,threshold=0.81)
+tmp.EpiTag <- EpiTag.2Regions(mat.MI=tmpMatMI$mat.MI,threshold=0.81)
 
 # MatMI <- getMatMI.2Regions(data1=RegionA,data2=RegionB,allelic=TRUE)
 # my.EpiTag <- EpiTag.2Regions(mat.MI=MatMI,threshold=0.90)
@@ -65,7 +65,11 @@ cor.plot(MC)
 test <- chr15[1:100,1:20]
 dim(test)
 Chr15.20S <- test
-MatMI15 <- getMatMI(Region1=test)
+
+sort(sample(1:100,20))
+
+names(Chr15.20S) <- paste("SNP",sort(sample(1:100,20)),sep="")
+MatMI15 <- getMatMI(Region1=Chr15.20S)
 res.EpiTag <- EpiTag(mat.MI=MatMI15,threshold=0.6,allelic=FALSE)
 save(file="/Users/memily/Github/EpiTag/inst/extdata/MatMIChr15.Rdata",MatMI15)
 save(file="/Users/memily/Github/EpiTag/inst/extdata/Chr15_20S.Rdata",Chr15.20S)
