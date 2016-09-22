@@ -18,6 +18,6 @@ A dataset containing 1000 five locus long haplotype.}
 \keyword{datasets}
 
 \seealso{
-\code{\link{RegionA}}}
+\code{\link{RegionA}}
 }
 
