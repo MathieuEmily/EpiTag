@@ -146,10 +146,10 @@ EpiTag <- function(Region1=NULL,Region2=NULL,mat.MI=NULL,threshold=0.8,allelic=F
 		}
 	} else {
 		if (is.null(Region2)){
-			mat.MI <- getMatMI(Region1=data$geno.R1,allelic=allelic)
+			mat.MI <- getMatMI(Region1=Region1,allelic=allelic)
 			return(EpiTag.1Region(mat.MI$mat.MI,threshold= threshold))
 		} else {
-			mat.MI <- getMatMI(Region1=data$geno.R1,Region2=data$geno.R2,allelic=allelic)
+			mat.MI <- getMatMI(Region1=Region1,Region2=Region2,allelic=allelic)
 			return(EpiTag.2Regions(mat.MI$mat.MI,threshold= threshold))
 		}
 	}
