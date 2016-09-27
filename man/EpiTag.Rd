@@ -45,19 +45,19 @@ res.EpiTag2 <- EpiTag(mat.MI=MatMI,threshold=0.81,allelic=TRUE)
 ############
 ## Loading of the genotypic data
 load(system.file("extdata/Chr15_20S.Rdata", package="EpiTag"))
-## Loading of the precomputed array of Mutual Information
-load(system.file("extdata/MatMIChr15.Rdata", package="EpiTag"))
 
 ## Computation of the mutual information and of the tag SNP selection simultaneously
-MatMI15 <- getMatMI(Region1=Chr15.20S)
-res.EpiTag.real1 <- EpiTag(mat.MI=MatMI15,threshold=0.6,allelic=FALSE)
+#### Can be long
+res.EpiTag.real1 <- EpiTag(Region1= Chr15.20S,threshold=0.6,allelic=FALSE)
+
 
 ## Same results with the  precomputation of the mutual information
+load(system.file("extdata/MatMIChr15.Rdata", package="EpiTag")) # Loading of the precomputed array of Mutual Information
 res.EpiTag.real2 <- EpiTag(mat.MI=MatMI15,threshold=0.6,allelic=FALSE)
 
 }
 \references{
-Friguet, C. and Emily, M. S\'election de marqueurs pour la d\'etection d'interactions de g\`enes. Proceedings of 45\`emes Journ\'ees de Statistique, May 2013, Toulouse, France. pp.178, 2013.\cr
+Friguet, C. and Emily, M. Selection de marqueurs pour la detection d'interactions de genes. Proceedings of 45emes Journees de Statistique, May 2013, Toulouse, France. pp.178, 2013.\cr
 }
 
 \seealso{

@@ -39,7 +39,7 @@ MatMI15 <- getMatMI(Region1=Chr15.20S)
 
 }
 \references{
-Friguet, C. and Emily, M. Sélection de marqueurs pour la détection d'interactions de gènes. Proceedings of 45èmes Journées de Statistique, May 2013, Toulouse, France. pp.178, 2013.\cr
+Friguet, C. and Emily, M. Selection de marqueurs pour la detection d'interactions de genes. Proceedings of 45emes Journees de Statistique, May 2013, Toulouse, France. pp.178, 2013.\cr
 }
 
 \seealso{
