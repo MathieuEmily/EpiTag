@@ -57,7 +57,7 @@ res.EpiTag.real2 <- EpiTag(mat.MI=MatMI15,threshold=0.6,allelic=FALSE)
 
 }
 \references{
-Friguet, C. and Emily, M. Sélection de marqueurs pour la détection d'interactions de gènes. Proceedings of 45èmes Journées de Statistique, May 2013, Toulouse, France. pp.178, 2013.\cr
+Friguet, C. and Emily, M. S\'election de marqueurs pour la d\'etection d'interactions de g\`enes. Proceedings of 45\`emes Journ\'ees de Statistique, May 2013, Toulouse, France. pp.178, 2013.\cr
 }
 
 \seealso{

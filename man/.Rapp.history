@@ -1,0 +1,11 @@
+library(devtools)#
+install_github("MathieuEmily/EpiTag")#
+library(EpiTag)
+data(Region1)#
+data(Region2)
+library(devtools)#
+install_github("MathieuEmily/EpiTag")#
+library(EpiTag)
+library(devtools)#
+install_github("MathieuEmily/EpiTag")#
+library(EpiTag)
